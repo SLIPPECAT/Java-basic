@@ -1,7 +1,20 @@
 <h1>변수</h1>
-<h3>상수와 리터럴</h3>
+<h2>상수와 리터럴</h2>
+<h3>상수</h3>
+한 번만 값이 저장 가능한 변수
+선언 방법: final 변수타입 변수이름;
+<h3>리터럴</h3>
+그 자체로 값을 의미하는 것
+<h3>변수 ,상수, 리터럴 구별하기></h3>
+변수: 하나의 값을 저장하기 위한 공간
+상수: 값을 한 번만 저장할 수 있는 공간
+리터럴: 그 자체로 값을 의미하는 것
+score: 변수, finalScore: 상수, 100, 1000: 리터럴
+<h3>리터럴의 접두사와 접미사</h3>
+논리형 ,문자형, 문자열 x
+정수형(L:long), 실수형(f,d)
+<h3>변수와 리터럴의 타입 불일치</h3>
 단 하나의 값을 저장할 수 있는 메모리 공간
-
 메모리공간은 공간이 구분될 수 있도록 메모리 주소를 가지고 있다.
 사람이 부르기 불편하므로 특정 메모리 영역에 이름을 붙이고 주소 대신에 이름을 붙여 사용해서 메모리 값을 저장하고 읽을 수 있게 한 것
 
@@ -13,11 +26,11 @@ long 8bytes
 값의 종류(타입)에 따라 변수의 메모리 공간 크기가 결정된다.
 
 변수 선언
+변수란 단 하나의 값을 저장할 수 있는 저장 공간
 선언 이유: 메모리에 값을 저장할 공간을 마련하기 위함
 선언 방법: 변수타입 변수 이름 ex. int age; int num or int age, num;
+선언 이후 대입을 하게 되지만, 연속적으로 쓸 수 있다. int x;, x=5;를 int x = 5;로 나타낼 수 있다.
 
-class Variable_1{
-}. 
 변수 생성 규칙
 1. 대소문자 구분되며 길이에 제한x
 2. 예약어 상용 불가
@@ -32,45 +45,8 @@ class Variable_1{
 
  변수의 초기화
  : 변수에 처음으로 값을 저장하는 것을 의미
- class Variable_2{
-   public static void main(String[] args){
-      boolean flag = false;
-      char grade = 'A';
-      byte val = 127;
-      shrt sval = 128;
-      int num = 32768
-      long price = 2_147_483_648L
-      float tax = 3.14f;
-      double score = 3.14159265358979;
-      
-      System.out.prtinln("boolean = " + flag)
-   }
- 
+
 변수의 값 읽기
-class Variable1_3 {
-    public static void main(String[] args) {
-        int age = 23;
-
-        year = age + 2000;
-        System.out.println("year = " + year); // 2023
-
-        // 변수의 값을 읽어오는 과정
-        // year = age + 2000;
-        // year = 23 + 2000;
-        // year = 2023;
-
-        age = age + 1;
-        System.out.println("age = " + age); // 24
-        System.out.println("year = " + year); // 2023
-
-        // 변수의 값을 읽어오는 과정
-        // age = age + 1;
-        // age = 23 + 1;
-        // age = 24;
-        // 프로그램은 순차적으로 코드가 실행되기 때문에
-        // 여기서 age의 값이 바뀌었다고 year에 영향을 주지 않는다.
-    }
-}
 
 변수의 종류
 : 변수의 종류에는 클래스, 인스턴스, 지역 변수가 있다.
