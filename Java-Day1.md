@@ -17,7 +17,7 @@ long 8bytes
 선언 방법: 변수타입 변수 이름 ex. int age; int num or int age, num;
 
 class Variable_1{
-}
+}. 
 변수 생성 규칙
 1. 대소문자 구분되며 길이에 제한x
 2. 예약어 상용 불가
@@ -125,7 +125,7 @@ class Variable1_4 {
  기본형과 참조형
  기본형
  논리, 문자, 정수, 실수형
- boolean , byte, short, int, long, float, double, char
+ boolean , byte, short, int, long, float, double, char(변수당 한 문자만 지정)
  
  아스키 코드: 128개의 문자조합을 제공하는 7비트 부호
  유니코드: 16비트로 표현 최대 65536자 표현 가능
