@@ -1,6 +1,3 @@
-# Java-Day1
-It is the repository for Java
-
 <h1>변수</h1>
 <h3>상수와 리터럴</h3>
 단 하나의 값을 저장할 수 있는 메모리 공간
