@@ -76,6 +76,22 @@
             }//end of main
         } // end of class
         
+        //4-6. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하는 프로그램을 작성하세요.
+        class Exercise4_6 {
+            public static void main(String[] args) {
+                    int result = 0;
+                    for (int a=1; a<=6; a++){
+                        for (int b=1; b<=6; b++){
+                            result = a+b;
+                            if (result == 6){
+                                System.out.println("a는"+a+"b는"+b+"입니다.");
+                            }
+                    }
+                     }
+                }
+            }
+
+        
        
         //4-7. 숫자로 이루어진 문자열 str이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코드를 완성하세요.
         //만일 문자열이 "12345"라면, ‘1+2+3+4+5’의 결과인 15를 출력이 출력되어야 합니다.
