@@ -185,15 +185,16 @@ new int[5];로 배열을 생성하면 intrk 4byte이기 때문에 총 20byte를 
 <h3>❗️❗️❗️랜덤으로 숫자 섞기 헷갈린다</h3>
 <h2>String배열</h2>
 <h3>String 클래스</h3>
-char[] 와 메서드(기능)를 결합한 것<br>
-기본형처럼 사용이 가능한 참조형<br>
-        String str = "행복";<br>
-        String str = new String("행복");<br>
-문자열을 많이 사용하기 때문에 특별하게 만들어진 클래스이다.<br>
-String 클래스는 내용을 변경할 수 없다. 새로운게 만들어진다.<br>
-        String name = "choi";
-        String firstname = "wb";
-        name = name + firstname
+
+        char[] 와 메서드(기능)를 결합한 것<br>
+        기본형처럼 사용이 가능한 참조형<br>
+                String str = "행복";<br>
+                String str = new String("행복");<br>
+        문자열을 많이 사용하기 때문에 특별하게 만들어진 클래스이다.<br>
+        String 클래스는 내용을 변경할 수 없다. 새로운게 만들어진다.<br>
+                String name = "choi";
+                String firstname = "wb";
+                name = name + firstname
 <h3>스트링 클래스의 주요 메서드</h3>
 
         char charAt(index). 문자열에서 해당 위치(index)에 있는 문자를 반환
