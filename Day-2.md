@@ -181,23 +181,74 @@ new int[5];로 배열을 생성하면 intrk 4byte이기 때문에 총 20byte를 
         System.out.println("Arrays.toString(arr) = " + Arrays.toString(arr));
         // [100, 90, 80, 70, 60, 50, 40, 30, 20, 10] 
 <h3>총합과 평균</h3>
-<h3></h3>
-<h3></h3>
-<h3></h3>
-<h2>break와 continue</h2>
-<h3></h3>
-<h3></h3>
-<h3></h3>
-<h3></h3>
-<h3></h3>
+평균을 구할 때, float avg = of; 초기화하고 시작하며 값은 소수점 6째자리 수까지 나왔다.
+<h3>❗️❗️❗️랜덤으로 숫자 섞기 헷갈린다</h3>
+<h2>String배열</h2>
+<h3>String 클래스</h3>
+char[] 와 메서드(기능)를 결합한 것<br>
+기본형처럼 사용이 가능한 참조형<br>
+        String str = "행복";<br>
+        String str = new String("행복");<br>
+문자열을 많이 사용하기 때문에 특별하게 만들어진 클래스이다.<br>
+String 클래스는 내용을 변경할 수 없다. 새로운게 만들어진다.<br>
+        String name = "choi";
+        String firstname = "wb";
+        name = name + firstname
+<h3>스트링 클래스의 주요 메서드</h3>
 
-<h2>break와 continue</h2>
-<h3></h3>
-<h3></h3>
-<h3></h3>
-<h2>break와 continue</h2>
-<h3></h3>
-<h3></h3>
-<h3></h3>
+        char charAt(index). 문자열에서 해당 위치(index)에 있는 문자를 반환
+        int lenght()  문자열의 길이를 반환
+        String substring(int from, int to)  문자열에서 해당 범위의 문자열을 반환(to는 포함 안됨)
+                                            인덱스가 하나만 적혀있을 경우 해당 인덱스부터 마지막까지 반환
+        boolean equals(Object obj)  문자열의 내용이 같은지 확인하여 같으면 true, 다르면 false
+        char[] toCharArray()  문자열을 문자배열(char[])로 변환해서 반환
+<h3>String 배열의 선언과 생성</h3>
+        
+        String[] name = new String[3];
+        참조형 이기 대문에 기본값 null로 초기화
+        지금까지 것과 관련 없는 3개의 문자열을 담을 수 있는 String 배열이 생성된 것이다.
 
-<h2>break와 continue</h2>
+<h2>2차원 배열</h2>
+테이블 형태의 데이터를 저장하기 위한 배열
+<h3>2차원 배열의 선언과 생성</h3>
+
+    int[][] score = new int[4][3]
+    score[0][0] = 88;
+    배열 score의 1행 1열에 88을 저장한다.
+<h3>2차원 배열의 초기화</h3>
+int[][] score = new int[][]{{},{},{},{}};
+int[][] score = {{},{},{},{}};
+❗️ 향상된 for 부분 이해가 조금 어렵다.
+        System.out.println();
+        // 출력 예 3 : 향상된 for
+        System.out.println("향상된 for");
+        for (int[] ints : score) {
+            for (int it : ints) {
+                System.out.println("anInt = " + it);
+            }
+            System.out.println();
+<h2>Arrays</h2>
+<h3>문자열 비교와 출력</h3>
+equals(), toString()
+
+        Arrays.toString(num) = [0, 1, 2]
+        Arrays.deepToString(score) = [[88, 35, 100], [84, 60, 55], [100, 99, 72], [33, 54, 77]]
+        1차원 비교는 equals, 다차원 비교는 deepEquals
+        
+<h3>배열 복사</h3>
+copyOf(), copyOfRange()
+
+        int[] arr2 = Arrays.copyOf(arr, arr.length);
+        System.out.println("Arrays.toString(arr2) = " + Arrays.toString(arr2));
+        int[] arr3 = Arrays.copyOf(arr, 3);
+        System.out.println("Arrays.toString(arr3) = " + Arrays.toString(arr3));
+        int[] arr4 = Arrays.copyOf(arr, 7); // 범위가 넘어가는 복사는 초기화값이 들어간다.
+        System.out.println("Arrays.toString(arr4) = " + Arrays.toString(arr4));
+        int[] arr5 = Arrays.copyOfRange(arr, 2, 4);
+        System.out.println("Arrays.toString(arr5) = " + Arrays.toString(arr5));
+        int[] arr6 = Arrays.copyOfRange(arr, 0, 7);// 범위가 넘어가는 복사는 초기화값이 들어간다.
+        System.out.println("Arrays.toString(arr6) = " + Arrays.toString(arr6));
+<h3>정렬</h3>
+sort()
+
+        Arrays.sort(arr); // 오름차순으로 정렬됩니다.
