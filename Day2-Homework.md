@@ -173,3 +173,33 @@
 
 <h1>Report4</h1>
 
+        ////5-1. 다음은 배열을 선언하거나 초기화한 것이다. 잘못된 것을 고르고 그 이유를 설명하세요.
+        int[] arr[];  ❗️변수 arr이 선이되지 않았다.
+        int[] arr = {1,2,3,};  
+        int[] arr = new int[5];  
+        int[] arr = new int[5]{1,2,3,4,5};  ❗new int[]의 5를 비워줘야 하거나 {1,2,3,4,5}를 뺴야한다.
+        int arr[5];  ❗ 이렇게 하면 변수 arr이 초기화되지 않는다.
+        int[] arr[] = new int[3][];  ❗변수 선언을 이렇게 할 수 없다.
+        
+        //////5-2. 다음과 같은 배열이 있을 때, arr[3].length의 값은?
+        int[][]arr ={
+        {5,5,5,5,5},
+        {10,10,10},
+        {20,20,20,20},  ❗️arr에서 3번째 값을 가져오는 것이므로 {20,20,20,20}이고 그 lengths는 4이다.
+        {30,30}
+        };
+
+        class Exercise5_3 {
+            public static void main(String[] args) {
+                int[] arr = {10, 20, 30, 40, 50};
+                int sum = 0;
+
+                for (int i = 0; i <arr.length; i++){
+                    sum += arr[i];
+                }
+                System.out.println("sum="+sum);
+            }
+        }
+        //}//예상 결과 : sum=150
+        
+        
