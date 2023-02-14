@@ -106,8 +106,8 @@ break;를 만나거나 switch 문이 끝나면 switch 문 전체를 빠져나간
 ❗️ while문과 do-while문의 차이점: while문은 한 번도 실행이 안될수도 있다. do-while문은 한 번은 꼭 실행한다.<br>
 어떤 때 이런 걸 쓸 수 있을까? 쓰더라도 if문으로 대체할 수 있을 것 같은데
 
-<h2>break와 contiunue</h2>
-<h3break</h3>
+<h2>배열</h2>
+<h3>배열의 길이와 초기화</h3>
 자신이 포함된 하나의 반복문을 벗어납니다.
 <h3>continue</h3>
 자신이 포함된 반복문의 끝으로 이동<br>
@@ -134,7 +134,35 @@ age는 지정된 주소를 통해 해당 배열을 가리키고 있습니다.<br
 인덱스의 범위는 0부터 '배열길이-1'까지!<br>
 요소는 저장공간이고 인덱스는 주소 저장공간의 주소 같은 것? <br>
 age[3] = 28;, age의 4번째 요소에 28을 저장 <br>
-int beatitudoAge = age[3];, 배열 age의 4번째 요소의 값을 읽어서 beautitudoAge 변수에 <br>
+int beatitudoAge = age[3];, 배열 age의 4번째 요소의 값을 읽어서 beautitudoAge 변수에 저장<br>
+<h1>배열</h1>
+<h2>배열의 길이와 초기화</h2>
+<bold>배열이름.length
+배열의 길이: 
+<h3>배열의 길이</h3>
+<h3>배열의 한계점</h3>
+<h3>배열의 초기화</h3>
+<h3></h3>
+<h3></h3>
+
+<h2>break와 continue</h2>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h2>break와 continue</h2>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+
+<h2>break와 continue</h2>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h2>break와 continue</h2>
 <h3></h3>
 <h3></h3>
 <h3></h3>
