@@ -138,5 +138,49 @@ s=s.toLowerCase()
 <h3>문자열 다루기 기본</h3>
 
         // 내가 푼 방법
-                
+        class Solution {
+            public boolean solution(String s) {
+                boolean answer = true;
+                int len = s.length();
+                int count = 0;
+
+                if (len == 4 || len == 6){
+                    System.out.println(len);
+                    for (int i = 0; i < len; i++){
+                        if ('0' <= s.charAt(i) && s.charAt(i) <='9'){
+                            count += 1;
+                        } else{
+                            count -= 100;
+                        }
+                    }
+                    answer = count==4 || count==6 ? true : false;
+                } else {
+                    answer = false;
+                }
+
+                return answer;
+            }
+        }
         
+ <h3>수박수박수박수박수박수</h3>
+
+        // 내가 푼 방법               
+        class Solution {
+            public String solution(int n) {
+                String answer = "";
+
+                for (int i = 1; i <= n; i++){
+                    if (i%2 == 1){
+                        answer += "수";
+                    }
+                    else {
+                        answer += "박";
+                    }
+                }
+                return answer;
+            }
+        }
+
+ <h3>수박수박수박수박수박수</h3>
+
+        // 내가 푼 방법   
