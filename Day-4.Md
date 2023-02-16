@@ -58,9 +58,61 @@
             keyboard.close();
         }
     }
-FF
-    // 
 
+    // 배열
+    import java.util.Scanner;
+    
+    public class Code06 {
+        public static void main(String[] args){
+            int[] grades;
+            grades = new int[5];  // variable length array
+
+            Scanner kb = new Scanner(System.in);
+            int n = kb.nextInt();
+            int[] array = new int[n];
+
+            grades[0] = 100;
+            grades[1] = 76;
+            grades[2] = 92;
+            grades[3] = 95;
+            grades[4] = 14;
+            int i = 0;
+            while(i < grades.length){
+                System.out.println("Grade "+(i+1)+":"+grades[i]);
+                i++;
+            }
+        }
+    }
+
+    // 사용자로부터 n개의 정수를 입력 받아 합과 최대값 구하기
+    import java.util.Scanner;
+
+    public class Code08 {
+        public static void main(String[] args){
+            Scanner kb = new Scanner((System.in));
+            System.out.println("정수의 개수를 입력해주세요.");
+            int n = kb.nextInt();
+            int[]data = new int[n];
+            for (int i = 0; i < n; i++)  // 왜 여기 중괄호 안치지?
+                data[i] = kb.nextInt();
+                kb.close();
+
+            int sum = 0;
+            int max = data[0];  // data[0]처럼 하나를 지정해주는 것!
+            for (int i = 0; i < n; i++){
+                sum += data[i];
+                if (data[i] > max)
+                max = data[i];
+            }
+            System.out.println(max);
+            System.out.println("The sum is: "+sum);
+            }
+        }
+
+    // n개의 정수를 입력받아 순서대로 배열에 저장하기, 
+    // 그 다음 모든 정수들을 오른쪽으로 한 칸씩 이동 마지막 정수는 배열의 첫 칸으로 이동
+    
+    
 <h3></h3>
 
 <h3></h3>
