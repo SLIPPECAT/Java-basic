@@ -120,4 +120,23 @@ s=s.toLowerCase()
 <h3>문자열 다루기 기본</h3>
 
         // 내가 푼 방법
+        class Solution {
+            public String solution(String[] seoul) {
+                String answer = "";
+                int len = seoul.length;
+                int x = 0;
+
+                for (int i = 0; i < len; i++){
+                    if (seoul[i].equals("Kim")){
+                        x = i;}
+                    answer = "김서방은 "+x+"에 있다";
+                    }
+                        return answer;
+                }
+        }
+        
+<h3>문자열 다루기 기본</h3>
+
+        // 내가 푼 방법
+                
         
