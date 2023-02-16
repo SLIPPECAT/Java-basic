@@ -111,7 +111,8 @@
 
     // n개의 정수를 입력받아 순서대로 배열에 저장하기, 
     // 그 다음 모든 정수들을 오른쪽으로 한 칸씩 이동 마지막 정수는 배열의 첫 칸으로 이동(Circular shift)
-    // ❗️ 순서를 표현식으로 최대한 구현하려고 해보자
+    // ❗️ 순서를 표현식으로 최대한 구현하려고 해보자, 꼭 앞에서부터 시작하지 않아도 된다.
+    // ❗️ for문에 조건을 달아서 빠져나오게 할 수도 있다.
     import java.util.Scanner;
 
     public class Code09 {
@@ -136,7 +137,57 @@
     }
     
     // 1~10만 사이의 모든 소수들을 찾아서 출력하기
-    
+    // ❗️ 소수(prime)에 대한 개념, 어디까지 나눠줄 수 있는가... i*i표현
+    // ❗️ for문을 끝까지 돌지 않아도 된다.
+    public class Code10 {
+        public static void main(String[] args) {
+            // 소수인지 아닌지 검사, 굉장히 중요한 문제 중의 하나!
+            // 2, 3, ..., n-1
+            // n-1까지 안가도 n/2까지만 가도 된다.
+            // n/2까지도 안가도 되고 root(n) sqrt(n)까지만 가도 된다.
+            // i < sqrt(n) 이건 계산이 어려우니까
+            // i제곱 < n
+            for (int n = 2; n <= 100000; n++){
+                boolean isPrime = true;
+                for (int i =2; i*i <= n && isPrime ; i++){
+                    if(n % i == 0){
+                        isPrime = false;  //not prime
+    //                break;
+                    }
+                }
+                if(isPrime){
+                    System.out.println(n+"은 소수입니다.");
+                }
+            }
+        }
+    }
+
+    // n개의 정수를 받고, 중복된 쌍의 개수를 출력하기
+    // ❗️ 모든 쌍을 검사, 쌍으로 검사할 때는 중첩 for문을 이용하자!
+    import java.util.Scanner;
+
+    public class Code11 {
+        public static void main(String[] args){  //main method (=function)
+            Scanner kb = new Scanner(System.in);
+            int n = kb.nextInt();
+            int[]data = new int[n];
+
+            for (int i = 0; i < n; i++){
+                data[i] = kb.nextInt();
+            }
+            kb.close();
+
+            int count = 0;
+            for (int i =0; i < n; i++){
+                for (int j = i+1; j < n; j++){
+                    if(data[i] == data[j]){
+                        count ++;
+                    }
+                }
+            }
+            System.out.println(count);
+        }
+    }
     
     
 <h3></h3>
