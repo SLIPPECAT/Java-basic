@@ -67,5 +67,27 @@
         public long solution(long price, long money, long count) {
             return Math.max(price * (count * (count + 1) / 2) - money, 0);
         }
-    }
-    
+<h3>2016</h3>
+
+
+<h3>나누어 떨어지는 숫자 배열</h3>
+
+
+<h3>내적</h3>
+내적: 성분끼리 곱한 값
+
+        // 내가 푼 방법
+        class Solution {
+            public int solution(int[] a, int[] b) {
+                int answer = 0;
+                
+                for (int i = 0; i < a.length; i++){
+                        answer += a[i]*b[i];
+                    }
+                System.out.println(answer);
+                return answer;
+            }
+        }
+
+
+        
