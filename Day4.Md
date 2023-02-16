@@ -50,8 +50,8 @@
             answer = Math.abs(result);
         }
         return answer;
+        }
     }
-}
     
     // 다른 풀이
     class Solution {
@@ -89,5 +89,35 @@
             }
         }
 
+<h3>문자열 내 p와 y의 개수</h3>
+문자열에 있는 문자를 확인하고 개수를 확인하여 비교할 수 있는가?
+hint: str.charAt(0)
+s=s.toLowerCase()
+🧐 True반환은 어떻게 하지?
 
+        // 내가 푼 방법
+        class Solution {
+            boolean solution(String s) {
+                boolean answer = true;
+                int count = 0;
+                for (int i =0; i< s.length(); i++){
+                    // if (!(s.charAt(i)=='p' || s.charAt(i)=='P' || s.charAt(i)=='y'||s.charAt(i)=='Y')){
+                    //     answer = True;
+                    // } 
+                    if(s.charAt(i)=='p' || s.charAt(i)=='P'){
+                        count += 1;
+                    } 
+                    else if(s.charAt(i)=='y'|| s.charAt(i)=='Y'){
+                        count -= 1;
+                    }
+                    answer = (count==0)? true : false;
+                }
+                return answer;
+            } 
+        }
+        
+        
+<h3>문자열 다루기 기본</h3>
+
+        // 내가 푼 방법
         
