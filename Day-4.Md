@@ -17,7 +17,6 @@
 
 <h3>입력 받는 법</h3>
 
-    // 입력 받는 법
     import java.util.Scanner;  // import 할 것들
         public class Code02
         {
@@ -35,7 +34,8 @@
             }
         }
 
-    // input.next(), input.netxInt(), .equals (문자열비교)
+<h3>input.next(), input.netxInt(), .equals (문자열비교)</h3>
+
     import java.util.Scanner;
     public class Code04 {
         public static void main(String[] args) {
@@ -60,7 +60,8 @@
         }
     }
 
-    // 배열
+<h3>배열</h3>
+    
     import java.util.Scanner;
     
     public class Code06 {
@@ -85,7 +86,8 @@
         }
     }
 
-    // 사용자로부터 n개의 정수를 입력 받아 합과 최대값 구하기
+<h3>사용자로부터 n개의 정수를 입력 받아 합과 최대값 구하기</h3>
+
     import java.util.Scanner;
 
     public class Code08 {
@@ -109,12 +111,15 @@
             System.out.println("The sum is: "+sum);
             }
         }
-
-    // n개의 정수를 입력받아 순서대로 배열에 저장하기, 
+        
+<h3>n개의 정수를 입력받아 순서대로 배열에 저장하기</h3>
+ 
     // 그 다음 모든 정수들을 오른쪽으로 한 칸씩 이동 마지막 정수는 배열의 첫 칸으로 이동(Circular shift)
     // ❗️ 순서를 표현식으로 최대한 구현하려고 해보자, 꼭 앞에서부터 시작하지 않아도 된다.
     // ❗️ for문에 조건을 달아서 빠져나오게 할 수도 있다.
     import java.util.Scanner;
+
+
 
     public class Code09 {
         public static void main(String[] args) {
@@ -136,8 +141,9 @@
             System.out.println(arr[0]);
         }
     }
-    
-    // 1~10만 사이의 모든 소수들을 찾아서 출력하기
+
+<h3>1~10만 사이의 모든 소수들을 찾기</h3>
+
     // ❗️ 소수(prime)에 대한 개념, 어디까지 나눠줄 수 있는가... i*i표현
     // ❗️ for문을 끝까지 돌지 않아도 된다.
     public class Code10 {
@@ -162,6 +168,8 @@
             }
         }
     }
+
+<h3>중복된 쌍의 개수 출력하기</h3>
 
     // n개의 정수를 받고, 중복된 쌍의 개수를 출력하기
     // ❗️ 모든 쌍을 검사, 쌍으로 검사할 때는 중첩 for문을 이용하자!
@@ -190,6 +198,9 @@
         }
     }
     
+    
+<h3>연속된 정수 더하기</h3>
+
     // 문제: n개의 정수를 입력받아 배열에 저장하고 0개 이상의 연속된 정수들을 더하여 얻을 수 있는 최대값 구하기
     // 정수 배열에서 구간을 구하는 문제의 접근은 모든 구간을 다 검사해보는 것
     import java.util.Scanner;
