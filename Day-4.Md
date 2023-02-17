@@ -1,8 +1,7 @@
 <h1>변수, 배열, 반복문</h1>
 
-<h3></h3>
-    
-    // 클래스와 변수
+<h3>클래스와 변수</h3>
+  
     public class Code01 {
         static int num;
         public static void main(String[] args){
@@ -15,6 +14,8 @@
             System.out.println("Sum " + num + anotherNum);  // left associativity
         }
     }
+
+<h3>입력 받는 법</h3>
 
     // 입력 받는 법
     import java.util.Scanner;  // import 할 것들
@@ -190,6 +191,76 @@
     }
     
     // 문제: n개의 정수를 입력받아 배열에 저장하고 0개 이상의 연속된 정수들을 더하여 얻을 수 있는 최대값 구하기
+    // 정수 배열에서 구간을 구하는 문제의 접근은 모든 구간을 다 검사해보는 것
+    import java.util.Scanner;
+
+    public class Code12 {
+        public static void main(String[] args){  //main method (=function)
+
+            Scanner kb = new Scanner(System.in);
+            int n = kb.nextInt();
+            int [] data = new int [n];
+
+            for (int i = 0; i < n; i ++)
+                data[i] = kb.nextInt();
+            kb.close();
+
+            int max = 0;
+            for (int i = 0; i < n; i++){
+                int sum = 0;
+                for (int j=i; j<n; j++){
+                        sum+=data[j];
+                    if (sum > max){
+                        max = sum;
+                    }
+                }
+            }
+            System.out.println(max);
+        }
+    }
+
+    // 문제: n개의 음이 아닌 정수를 받아 배열에 저장한다. 이들 중에서 1개이상의 연속된 정수들을 합하여 얻을 수 있는 소수들 중에서 최댓값을 출력
+    import java.util.Scanner;
+
+public class Code13 {
+    public static void main(String[] args){  //main method (=function)
+        Scanner kb = new Scanner(System.in);
+
+        int n = kb.nextInt();
+        int[]data = new int [n];
+
+        for (int i = 0; i < n; i++)
+            data[i] = kb.nextInt();
+        kb.close();
+
+        int max = 0;
+        for (int i=0; i < n; i++){
+            for (int j = i; j < n; j++){
+                //convert data[i]....data[j] into an integer
+                // test if it is a prime
+                // if yes, compare to the max
+                int val = 0;
+                for (int k = i; k <=j; k++)
+                    val = val * 10 + data[k];
+                // test if it is a prime
+                boolean isPrime  = true;
+                for (int k=2; k*k <= val && isPrime; k++)
+                    if (val % k == 0)
+                        isPrime = false;
+                // val =1 일 때를 놓치게 된다.
+                // if yes, compare to the max
+                    if (isPrime && val > 1 && val > max)
+                        max = val;
+                        //소수가 하나도 없어서 max인 경우도 있을 수 있다.
+                }
+            }
+        if (max > 0)
+            System.out.println(max);
+        else
+            System.out.println("No prime number");
+        }
+    } 
+    
 <h3></h3>
 
 <h3></h3>
