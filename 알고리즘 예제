@@ -1,0 +1,33 @@
+<h1>1번. 신대륙 발견 (하)</h1>
+
+
+
+<h1>2번. 몇시간 했더라? (중)</h1>
+
+  public class Hours {
+        public int solution(int[] arr1, int[] arr2) {
+            int answer = 0;
+            int sum = 0;
+            for (int i=0; i<7; i++){
+                if (arr2[i] >= 29){
+                    arr2[i]=21;
+                    sum += arr2[i]-arr1[i];
+                }
+                else{
+                    sum += arr2[i]-arr1[i];
+                }
+                answer = sum;
+            }
+            return answer;
+        }
+
+        public static void main(String[] args) {
+            Hours method = new Hours();
+            int[] arr1 = {9, 9, 9, 9, 7, 9, 8};
+            int[] arr2 = {23, 23, 30, 28, 30, 23, 23};
+            System.out.println(method.solution(arr1, arr2));
+        }
+    
+    
+    }
+    
