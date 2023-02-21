@@ -18,7 +18,7 @@
     }
     // 설명 어떻게 해야하는지 몰라서 주석처리로 적어두었습니다..
     
-        class Exercise6_2 {
+    class Exercise6_2 {
             public static void main(String[] args) {
                 Student s = new Student("홍길동", 1, 1, 100, 60, 76);
 
@@ -54,7 +54,7 @@
             }
         }
         
-        class Exercise6_3 {
+    class Exercise6_3 {
             public static void main(String args[]) {
                 Student s = new Student();
                 s.name = "홍길동";
@@ -84,7 +84,7 @@
             }
         }
         
-        //6-5. 다음의 코드에 정의된 변수들을 종류별(클래스 변수,인스턴스 변수, 지역변수)로 구분해서 적으세요.
+    //6-5. 다음의 코드에 정의된 변수들을 종류별(클래스 변수,인스턴스 변수, 지역변수)로 구분해서 적으세요.
         class PlayingCard {
             int kind;  ❗️인스턴스 변수
             int num;  ❗️인스턴스 변수
@@ -99,7 +99,7 @@
             }
         }
         
-        //6-7. 다음은 컴퓨터 게임의 병사(marine)를 클래스로 정의한 것이다.
+    //6-7. 다음은 컴퓨터 게임의 병사(marine)를 클래스로 정의한 것이다.
         //이 클래스의 멤버 중에 static을 붙여야 하는 것은 어떤 것들이고 그 이유는 무엇인가?
         //(단, 모든 병사의 공격력과 방어력은 같아야 한다.)
         class Marine {
