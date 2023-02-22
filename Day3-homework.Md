@@ -189,3 +189,26 @@
         ❗a, e
         
 <h1>Report7</h1>
+
+        class Exercise6_17 {
+
+            /*shuffle 메서드를 작성하세요. */
+            ❗️shuffle 메서드에서 static을 꼭 써줘야하는 부분이겠죠?... 정확히 이해가 안되는 것 같아요 마음은 이해하는데 머리가 늦습니다..
+            static int[] shuffle(int[] original){
+                for (int n = 0; n < 9; n++) {
+                    int i = (int) (Math.random() * 9);
+                    int tmp = original[0];
+                    original[0] = original[i];
+                    original[i] = tmp;
+                }
+                return original;
+            }
+
+            public static void main(String[] args) {
+                int[] original = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+                System.out.println(java.util.Arrays.toString(original));
+
+                int[] result = shuffle(original);
+                System.out.println(java.util.Arrays.toString(result));
+            }
+        }
