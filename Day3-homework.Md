@@ -190,7 +190,7 @@
         
 <h1>Report7</h1>
 
-        class Exercise6_17 {
+        😆 class Exercise6_17 {
 
             /*shuffle 메서드를 작성하세요. */
             ❗️shuffle 메서드에서 static을 꼭 써줘야하는 부분이겠죠?... 정확히 이해가 안되는 것 같아요 마음은 이해하는데 머리가 늦습니다..
@@ -213,7 +213,7 @@
             }
         }
         
-        public class Exercise6_18 {
+        😆 public class Exercise6_18 {
 
             /*isNumber 메서드를 작성하세요.*/
             public static boolean isNumber(String str) {
@@ -237,7 +237,7 @@
         }
         //예상 결과 : 123는 숫자입니까? true, 1234o는 숫자입니까? false
 
-        class MyTv {
+        😆 class MyTv {
             boolean isPowerOn;
             int channel;
             int volume;
@@ -278,7 +278,7 @@
             }
         }
 
-        class Exercise6_19 {
+          class Exercise6_19 {
             public static void main(String args[]) {
                 MyTv t = new MyTv();
                 t.channel = 100;
@@ -296,7 +296,7 @@
 
         //예상 결과 : CH: 100, VOL: 0 / CH: 99, VOL: 0 / CH: 100, VOL: 100
         
-        class Exercise6_20 {
+        😆 class Exercise6_20 {
             /* (1) max 메서드를 작성하시오 . */
             public static int max(int[]arr){
                 if(arr==null || arr.length == 0){
@@ -324,7 +324,7 @@
 
         //예상 결과 : 최대값: 9 / 최대값: -99999 최대값: -999999
 
-        class Exercise6_21 {
+        😆 class Exercise6_21 {
             /* (1) abs 메서드를 작성하시오. */
             public static int abs(int value){
                 // s는 부호 변환용 변수
